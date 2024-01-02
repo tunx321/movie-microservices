@@ -1,0 +1,6 @@
+env: "local"
+storage_path: "./storage/movies.db"
+tokenTTL: 1h
+grpc:
+  port: 8081
+  timeout: 10s

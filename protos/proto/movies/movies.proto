@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package movies;
+
+option go_package = "tunx321.movie.v1;movies";
+
+service Movies{
+  rpc GetMovieByID(GetMovieRequest) returns (Movie);
+  rpc InsertMovie(Movie) returns (MovieResponse);
+  rpc DeleteMovie(GetMovieRequest) returns (MovieResponse);
+}
+
+
+message Movie{
+  string title = 1;
+  string author = 2;
+  string duration = 3;
+  string description = 4;
+}
+
+
+message GetMovieRequest{
+  int64 movie_id = 1;
+}
+
+message MovieResponse{
+  int64 movie_id = 1;
+}
+
