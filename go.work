@@ -1,1 +1,8 @@
 go 1.22rc1
+
+use (
+	"./movies"
+	//"./users"
+	//"./api_gateway"
+	//"./protos"
+)

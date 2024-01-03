@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package movies;
 
-option go_package = "tunx321.movie.v1;movies";
+option go_package = "tunx321.movies.v1;movies";
 
 service Movies{
   rpc GetMovieByID(GetMovieRequest) returns (Movie);
